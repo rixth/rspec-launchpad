@@ -2,6 +2,8 @@
 
 Show RSpec results on the pads of a Novation Launchpad.
 
+[![](http://i.imgur.com/nKed7.png)30 second video demonstration.](http://www.youtube.com/watch?v=L4-ey_nz6wc)
+
 ## Installation
 
 Add `rspec-launchpad` to your application's Gemfile, then run bundle install. You must have portmidi installed, which you can get on OS X by running `brew install portmidi`.
@@ -10,7 +12,7 @@ Add `rspec-launchpad` to your application's Gemfile, then run bundle install. Yo
 
 Add the RSpec options below to wherever you run rspec from (cli, guard, etc). You can combine this reporter with others, to enable both text & Launchpad output.
 
-    `-r rspec-launchpad -f RSpec::Launchpad::Reporter`
+    -r rspec-launchpad -f RSpec::Launchpad::Reporter
 
 Each pad on the device represents one spec. The pad will turn green if the test passed, red if it failed, or yellow if it is pending.
 
